@@ -181,6 +181,32 @@ h3 {
   border: 0;
 }
 
+.contact-phone {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.phone-link {
+  font-weight: 700;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: #25d366;
+  font-weight: 700;
+}
+
+.whatsapp-link img {
+  width: 28px;
+  height: 28px;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .cards {
