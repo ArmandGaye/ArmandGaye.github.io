@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acquisition de données</title>
+  <link rel="stylesheet" href="../../../assets/css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../../../index.html">Armand Gaye</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      </button>
+      <nav class="menu" id="menu">
+        <a href="../../../index.html">Accueil</a>
+        <a href="../../index.html">Data</a>
+        <a href="../../notebooks.html">Notebooks</a>
+        <a href="../../../contact/index.html">Contactez-moi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <h1>Acquisition de données</h1>
+      <p>Ce README est la page de navigation du sous-répertoire.</p>
+    
+      <h2>Notebooks du sous-répertoire</h2>
+      <ul class="list">
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/acquisition-donnees/acquisition_donnees.ipynb">acquisition_donnees.ipynb</a></li>
+      </ul>
+      <p>Désigne l’ensemble des méthodes et outils utilisés pour recueillir des informations brutes afin de les transformer ensuite en connaissances exploitables.</p>
+    
+      <h2>🔑 Les étapes principales</h2>
+      <ul class="list">
+        <li><strong>Définition des objectifs</strong> : savoir pourquoi on collecte des données (ex. améliorer un produit, analyser un marché, suivre des performances).</li>
+        <li><strong>Choix des sources</strong> : données internes (CRM, ventes, capteurs) ou externes (enquêtes, réseaux sociaux, open data).</li>
+        <li><strong>Méthodes de collecte</strong> :
+          <ul>
+            <li>Questionnaires et sondages</li>
+            <li>Observations directes</li>
+            <li>Capteurs et IoT</li>
+            <li>Logs informatiques et bases de données</li>
+            <li>Web scraping et API</li>
+          </ul>
+        </li>
+        <li><strong>Nettoyage et validation</strong> : éliminer les doublons, corriger les erreurs, vérifier la cohérence.</li>
+        <li><strong>Stockage et organisation</strong> : bases de données relationnelles, data lakes, ou systèmes cloud.</li>
+      </ul>
+    
+      <h2>⚖️ Points essentiels à garder en tête</h2>
+      <ul class="list">
+        <li><strong>Qualité des données</strong> : des données incomplètes ou biaisées mènent à de mauvaises décisions.</li>
+        <li><strong>Respect de la vie privée</strong> : conformité aux réglementations (RGPD en Europe, par exemple).</li>
+        <li><strong>Sécurité</strong> : protéger les données contre les accès non autorisés.</li>
+      </ul>
+      <p><em>En résumé, la collecte de données n’est pas seulement une opération technique : c’est une démarche stratégique qui conditionne la fiabilité des analyses et des décisions.</em></p>
+    
+      <p>Détaillons ensemble les cinq dimensions clés de l’acquisition de données :</p>
+      <ul class="list">
+        <li>Outils de collecte (logiciels)</li>
+        <li>Architectures</li>
+        <li>Processus</li>
+        <li>Bonnes pratiques</li>
+        <li>Éthique</li>
+      </ul>
+    
+      <h2>🛠️ Outils de collecte (logiciels)</h2>
+      <ul class="list">
+        <li><strong>ETL (Extract, Transform, Load)</strong> : Talend, Pentaho, Informatica, Airbyte.</li>
+        <li><strong>Data scraping</strong> : Scrapy, BeautifulSoup, Octoparse.</li>
+        <li><strong>IoT & capteurs</strong> : Node-RED, Grafana, MQTT brokers.</li>
+        <li><strong>Questionnaires & enquêtes</strong> : LimeSurvey, Qualtrics, Google Forms.</li>
+        <li><strong>Tracking web & produit</strong> : Google Analytics, Matomo (open source), PostHog.</li>
+      </ul>
+    
+      <h2>🏗️ Architectures</h2>
+      <ul class="list">
+        <li><strong>Data Warehouse</strong> : centralisation structurée (ex. Snowflake, BigQuery).</li>
+        <li><strong>Data Lake</strong> : stockage brut et massif (Hadoop, Amazon S3).</li>
+        <li><strong>Lambda Architecture</strong> : combinaison batch + streaming pour temps réel.</li>
+        <li><strong>Microservices & APIs</strong> : ingestion via services modulaires.</li>
+        <li><strong>Edge Computing</strong> : traitement proche des capteurs pour réduire la latence.</li>
+      </ul>
+    
+      <h2>🔄 Processus</h2>
+      <ol>
+        <li><strong>Définition des besoins</strong> : objectifs clairs (marketing, recherche, monitoring).</li>
+        <li><strong>Collecte</strong> : via capteurs, formulaires, logs, scraping.</li>
+        <li><strong>Prétraitement</strong> : nettoyage, normalisation, suppression des doublons.</li>
+        <li><strong>Stockage</strong> : bases relationnelles (SQL) ou NoSQL (MongoDB, Cassandra).</li>
+        <li><strong>Analyse & visualisation</strong> : BI (Power BI, Tableau, Superset).</li>
+        <li><strong>Diffusion</strong> : partage des insights aux décideurs.</li>
+      </ol>
+    
+      <h2>⚖️ Éthique</h2>
+      <ul class="list">
+        <li><strong>Consentement</strong> : informer les utilisateurs sur la collecte et obtenir leur accord.</li>
+        <li><strong>Confidentialité</strong> : anonymiser les données sensibles.</li>
+        <li><strong>Transparence</strong> : expliquer comment et pourquoi les données sont utilisées.</li>
+        <li><strong>Non-discrimination</strong> : éviter les biais dans les datasets et les algorithmes.</li>
+        <li><strong>Conformité légale</strong> : respecter RGPD en Europe, CDP au Sénégal, CCPA en Californie.</li>
+      </ul>
+      <p><em>En résumé, l’acquisition de données est un équilibre entre <strong>technologie (outils, architectures)</strong> et <strong>responsabilité (processus, bonnes pratiques, éthique)</strong>.</em></p>
+    
+      <h2>Top 20 plateformes de téléchargement de données</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plateforme</th>
+            <th>Type</th>
+            <th>Licence / Prix</th>
+            <th>Lien officiel</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Kaggle Datasets</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://www.kaggle.com/datasets">kaggle.com/datasets</a></td><td>Communauté active, datasets variés</td></tr>
+          <tr><td><strong>Google Dataset Search</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://datasetsearch.research.google.com">datasetsearch.research.google.com</a></td><td>Moteur de recherche global</td></tr>
+          <tr><td><strong>UCI ML Repository</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://archive.ics.uci.edu/ml">archive.ics.uci.edu/ml</a></td><td>Classique pour l’enseignement</td></tr>
+          <tr><td><strong>AWS Data Exchange</strong></td><td>Payant</td><td>Abonnement / à l’usage</td><td><a href="https://aws.amazon.com/data-exchange">aws.amazon.com/data-exchange</a></td><td>Données publiques américaine</td></tr>
+          <tr><td><strong>Statista</strong></td><td>Payant</td><td>Abonnement (≈59–199 €/mois)</td><td><a href="https://www.statista.com">statista.com</a></td><td>Données publiques</td></tr>
+          <tr><td><strong>Bright Data</strong></td><td>Payant</td><td>À l’usage (datasets & scraping)</td><td><a href="https://brightdata.com">brightdata.com</a></td><td>Web scraping & datasets</td></tr>
+          <tr><td><strong>Datarade</strong></td><td>Payant</td><td>Marketplace multi-fournisseurs</td><td><a href="https://datarade.ai">datarade.ai</a></td><td>Données sectorielles</td></tr>
+          <tr><td><strong>Data.gov (USA)</strong></td><td>Gratuit</td><td>Open government data</td><td><a href="https://data.gov">data.gov</a></td><td>Données publiques américaines</td></tr>
+          <tr><td><strong>EU Open Data Portal</strong></td><td>Gratuit</td><td>Open government data</td><td><a href="https://data.europa.eu">data.europa.eu</a></td><td>Données européennes</td></tr>
+          <tr><td><strong>World Bank Data</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://data.worldbank.org">data.worldbank.org</a></td><td>Indicateurs économiques</td></tr>
+          <tr><td><strong>UN Data</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://data.un.org">data.un.org</a></td><td>Données globales</td></tr>
+          <tr><td><strong>Quandl (Nasdaq Data Link)</strong></td><td>Payant</td><td>Abonnement (≈49–299 €/mois)</td><td><a href="https://data.nasdaq.com">data.nasdaq.com</a></td><td>Données financières</td></tr>
+          <tr><td><strong>Bloomberg Enterprise Data Catalog</strong></td><td>Payant</td><td>Premium (≥20k €/an)</td><td><a href="https://data.bloomberg.com">data.bloomberg.com</a></td><td>Finance haut de gamme</td></tr>
+          <tr><td><strong>Zyte (ex Scrapinghub)</strong></td><td>Payant</td><td>À l’usage (API scraping)</td><td><a href="https://www.zyte.com">zyte.com</a></td><td>E-commerce, web analytics</td></tr>
+          <tr><td><strong>Coresignal</strong></td><td>Payant</td><td>Abonnement (≈500–2000 €/mois)</td><td><a href="https://coresignal.com">coresignal.com</a></td><td>Données RH & entreprises</td></tr>
+          <tr><td><strong>Data & Sons</strong></td><td>Payant</td><td>Marketplace</td><td><a href="https://dataandsons.com">dataandsons.com</a></td><td>Données commerciales</td></tr>
+          <tr><td><strong>OpenStreetMap</strong></td><td>Gratuit</td><td>Open source (ODbL)</td><td><a href="https://www.openstreetmap.org">openstreetmap.org</a></td><td>Données géospatiales</td></tr>
+          <tr><td><strong>Humanitarian Data Exchange (HDX)</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://data.humdata.org">data.humdata.org</a></td><td>Données humanitaires</td></tr>
+          <tr><td><strong>GitHub (repos publics)</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://github.com">github.com</a></td><td>Datasets partagés par les devs</td></tr>
+          <tr><td><strong>Zenodo</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://zenodo.org">zenodo.org</a></td><td>Dépôt scientifique</td></tr>  
+          <tr><td><strong>Dataverse</strong></td><td>Gratuit</td><td>Open access</td><td><a href="https://dataverse.org">dataverse.org</a></td><td>Dépôt de données</td></tr>
+          <tr><td><strong>OpenDataSoft</strong></td><td>Payant</td><td>Abonnement (≈199–499 €/mois)</td><td><a href="https://opendatasoft.com">opendatasoft.com</a></td><td>Données publiques</td></tr>
+        </tbody>
+      </table>
+    
+      <h2>📌 Conseils pratiques</h2>
+      <ul class="list">
+        <li><strong>Gratuit/open source</strong> : parfait pour l’apprentissage, la recherche académique et les projets exploratoires.</li>
+        <li><strong>Payant/premium</strong> : recommandé pour les entreprises qui ont besoin de données fiables, actualisées et sectorielles (finance, marketing, RH).</li>
+        <li><strong>Attention aux licences</strong> : certaines plateformes open data imposent des conditions d’utilisation (ODbL, CC-BY).</li>
+      </ul>
+    
+      <h2>⚠️ Limites et précautions</h2>
+      <p><strong>Qualité variable</strong> : les dépôts open source peuvent contenir des données incomplètes ou non mises à jour.</p>
+      <p><strong>Coût élevé</strong> : les marketplaces premium facturent souvent par volume ou par abonnement.</p>
+      <p><strong>Conformité légale</strong> : vérifier la conformité RGPD et les règles locales (au Sénégal, la CDP encadre la protection des données personnelles).</p>
+    </section>
+  </main>
+  </main>
+
+  <script src="../../../assets/js/script.min.js"></script>
+</body>
+</html>
