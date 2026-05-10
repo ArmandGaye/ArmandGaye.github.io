@@ -69,6 +69,11 @@ img {
   display: none;
 }
 
+.menu-toggle-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
 main {
   padding-top: 90px;
 }
@@ -221,7 +226,8 @@ h3 {
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     border-radius: 0.4rem;
-    padding: 0.4rem 0.7rem;
+    padding: 0.35rem 0.65rem;
+    cursor: pointer;
   }
 
   .menu {

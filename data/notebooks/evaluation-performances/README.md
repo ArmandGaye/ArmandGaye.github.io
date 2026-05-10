@@ -1,3 +1,7 @@
-# evaluation-performances
+# Évaluation des performances
 
-Sous-rubrique Data. Notebook source dans /data/notebooks/.
+Ce README est la page de navigation du sous-répertoire.
+
+## Notebooks du sous-répertoire
+
+Aucun notebook `.ipynb` n'est présent dans ce dossier pour le moment.

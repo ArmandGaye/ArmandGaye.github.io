@@ -1,3 +1,7 @@
-# eda
+# Analyse exploratoire des données (EDA)
 
-Sous-rubrique Data. Notebook source dans /data/notebooks/.
+Ce README est la page de navigation du sous-répertoire.
+
+## Notebooks du sous-répertoire
+
+- [eda.ipynb](https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/eda/eda.ipynb)

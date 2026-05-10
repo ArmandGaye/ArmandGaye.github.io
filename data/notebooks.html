@@ -10,10 +10,14 @@
   <header class="header">
     <div class="container nav-wrap">
       <a class="brand" href="../index.html">Armand Gaye</a>
-      <nav class="menu open">
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      </button>
+      <nav class="menu" id="menu">
         <a href="../index.html">Accueil</a>
         <a href="index.html">Data</a>
         <a href="../cyber/index.html">Cybersécurité</a>
+        <a href="../contact/index.html">Contactez-moi</a>
       </nav>
     </div>
   </header>
@@ -22,18 +26,19 @@
       <h1>Notebooks Data</h1>
       <p></p>
       <ul class="list">
-        <li>Bases en Python — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/bases-python/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/bases-python/bases_python.ipynb">Notebook</a></li>
-        <li>Étude comparative ML vs Deep Learning — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/ml-to-deep-learning/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/ml-to-deep-learning/ml_vs_dl.ipynb">Notebook</a></li>
-        <li>Acquisition de données — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/acquisition-donnees/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/acquisition-donnees/acquisition_donnees.ipynb">Notebook</a></li>
-        <li>Chargement des bibliothèques — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/chargement-bibliotheques/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/chargement-bibliotheques/chargement_biblios.ipynb">Notebook</a></li>
-        <li>Chargement des données — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye.github.io/blob/main/data/notebooks/chargement-donnees/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye.github.io/blob/main/data/notebooks/chargement-donnees/chargement_donnees.ipynb">Notebook</a></li>
-        <li>Analyse exploratoire (EDA) — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/eda/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/eda/eda.ipynb">Notebook</a></li>
-        <li>Prétraitements — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/pretraitements/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/pretraitements/pretraitements.ipynb">Notebook</a></li>
-        <li>Splitting — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye.github.io/blob/main/data/notebooks/splitting/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/splitting/splitting.ipynb">Notebook</a></li>
-        <li>Training des modèles — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/training-modeles/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/training-modeles/training.ipynb">Notebook</a></li>
-        <li>Évaluation des performances — <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/evaluation-performances/README.md">README</a> · <a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/performances-metrics/performance.ipynb">Notebook</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/bases-python/README.md">Bases en Python </a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/ml-to-deep-learning/README.md">Étude comparative ML vs Deep Learning</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/acquisition-donnees/README.md">Acquisition de données</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/chargement-bibliotheques/README.md">Chargement des bibliothèques</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/chargement-donnees/README.md">Chargement des données</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/eda/README.md">Analyse exploratoire (EDA)</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/pretraitements/README.md">Prétraitements</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/splitting/README.md">Splitting</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/training-modeles/README.md">Training des modèles</a></li>
+        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/performances-metrics/README.md">Évaluation des performances</a></li>
       </ul>
     </section>
   </main>
+  <script src="../assets/js/script.min.js"></script>
 </body>
 </html>

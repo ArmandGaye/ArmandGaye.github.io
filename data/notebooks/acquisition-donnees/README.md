@@ -1,4 +1,10 @@
-# Acquisition de données, data collection
+# Acquisition de données
+
+Ce README est la page de navigation du sous-répertoire.
+
+## Notebooks du sous-répertoire
+
+- [acquisition_donnees.ipynb](https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/acquisition-donnees/acquisition_donnees.ipynb)
 
 Désigne l’ensemble des méthodes et outils utilisés pour recueillir des informations brutes afin de les transformer ensuite en connaissances exploitables.
 
