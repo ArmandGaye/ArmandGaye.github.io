@@ -25,21 +25,153 @@
   <main>
     <section class="container page-hero">
       <h1>Bases en Python</h1>
-      <p>Fondations du langage Python pour la Data Science : syntaxe, structures, fonctions et manipulation de données.</p>
+      <p>Le langage Python est un langage de programmation très populaire dans le domaine de la Data en raison de sa simplicité, de sa flexibilité et de la richesse de ses bibliothèques.<br>
+        C'est un langage de haut niveau qui permet aux data scientists de se concentrer sur l'analyse des données plutôt que sur les détails de la programmation.<br>
+        Une fondation solide en langage Python est essentielle pour le Datascienstist.</p>
+      <h3> Les variables</h3>
+      <p>Les variables sont des conteneurs qui stockent des valeurs. En Python, vous pouvez créer une variable en lui assignant une valeur à l'aide de l'opérateur d'affectation (=). Par exemple :</p>
+      <pre><code class="language-python">
+        x = 10
+        </code></pre>
+
+      <h3>Les types de données</h3>
+      <p>Python prend en charge plusieurs types de données, notamment les entiers (int), les nombres à virgule flottante (float), les chaînes de caractères (str), les listes (list), les tuples (tuple), les ensembles (set) et les dictionnaires (dict). Par exemple :</p>
+      <pre><code class="language-python">
+        name = "Alice"  # str
+        age = 30        # int
+        height = 1.75   # float
+        hobbies = ["reading", "hiking"]  # list
+        </code></pre>
+
+      <h3>Les structures de contrôle (boucles, conditions)</h3>
+      <p>Les structures de contrôle permettent de diriger le flux d'exécution du programme. Les boucles (for, while) sont utilisées pour répéter des blocs de code, tandis que les conditions (if, elif, else) permettent de prendre des décisions en fonction de certaines conditions. Par exemple :</p>
+      <pre><code class="language-python">
+        # Boucle for
+        for i in range(5):
+            print(i)
+
+        # Condition if
+        if age > 18:
+            print("Vous êtes majeur.")
+        else:
+            print("Vous êtes mineur.")
+      
+        </code></pre>
+
+      <h3>Les fonctions</h3>
+      <p>Les fonctions sont des blocs de code réutilisables qui effectuent une tâche spécifique. En Python, vous pouvez définir une fonction en utilisant le mot-clé `def`. Par exemple :</p>
+      <pre><code class="language-python">
+        def greet(name):
+            print(f"Hello, {name}!")
+
+        greet("Alice")
+        </code></pre>
+      <h3>Les classes</h3>
+      <p>Les classes permettent de créer des objets personnalisés en définissant un plan pour leur structure et leur comportement. En Python, vous pouvez définir une classe en utilisant le mot-clé `class`. Par exemple :</p>
+      <pre><code class="language-python">
+        class Person:
+            def __init__(self, name, age):
+                self.name = name
+                self.age = age
+
+            def introduce(self):
+                print(f"Je m'appelle {self.name} et j'ai {self.age} ans.")
+        </code></pre>
+      <h3>Les modules</h3>
+      <p>Les modules sont des fichiers contenant du code Python qui peuvent être importés dans d'autres scripts. Ils permettent de structurer le code et de le réutiliser. Par exemple :</p>
+      <pre><code class="language-python">
+        import math
+        print(math.pi)
+        </code></pre>
+
+      <h2>Maîtriser les bibliothèques de base</h2>
+      <p>Apprenez à utiliser les bibliothèques essentielles pour la datascience, telles que :</p>
+      <ul class="list">
+        <li>NumPy pour les calculs numériques</li>
+        <li>Pandas pour la manipulation des données</li>
+        <li>Matplotlib et Seaborn pour la visualisation des données</li>
+      </ul>
+
+      <h3>NumPy pour les calculs numériques</h3>
+      <img src="https://numpy.org/images/logo.svg" alt="NumPy" width="100" height="100">
+      <p>NumPy est une bibliothèque fondamentale pour la manipulation de tableaux et les calculs numériques en Python. Elle offre des fonctionnalités puissantes pour travailler avec des données multidimensionnelles. Par exemple :</p>
+      <pre><code class="language-python">
+        import numpy as np
+        # Créer un tableau NumPy
+        arr = np.array([1, 2, 3, 4, 5])
+        </code></pre>
+
+
+      <h3>Pandas pour la manipulation des données</h3>
+      <img src="https://images.seeklogo.com/logo-png/42/1/pandas-logo-png_seeklogo-425787.png" alt="Pandas" width="100" height="100">
+      <p>Pandas est une bibliothèque de manipulation de données qui fournit des structures de données flexibles et des outils pour travailler avec des données tabulaires. Par exemple :</p>
+      <pre><code class="language-python">
+        import pandas as pd
+        # Créer un DataFrame Pandas
+        data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+        df = pd.DataFrame(data)
+        </code></pre>
+  <h3>Matplotlib et Seaborn pour la visualisation des données</h3>
+  <img src="../../../assets/img/matplotlib.svg" alt="Matplotlib" width="200" height="200">
+  <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" width="200" height="200">
+  <p>Matplotlib est une bibliothèque de visualisation de données qui permet de créer des graphiques statiques, animés et interactifs. Seaborn est une bibliothèque basée sur Matplotlib qui offre des graphiques statistiques plus attrayants et faciles à utiliser. Par exemple :</p>
+      <pre><code class="language-python">
+        import matplotlib.pyplot as plt
+        import seaborn as sns
+        # Visualiser les données avec Matplotlib
+        plt.hist(df['Age'])
+        plt.show()
+
+        # Visualiser les données avec Seaborn
+        sns.barplot(x='Name', y='Age', data=df)
+        plt.show()
+        </code></pre>
+
+<h2>Apprendre les outils de développement</h2>
+      <p>Familiarisez-vous avec les outils de développement tels que :</p>
+      <ul class="list">
+        <li>Jupyter Notebook pour l'exploration interactive des données</li>
+        <li>Anaconda pour la gestion des environnements et des packages</li>
+        <li>Git et GitHub pour faciliter votre travail en datascience</li>
+      </ul>
+
+  <h3>Jupyter Notebook pour l'exploration interactive des données</h3>
+  <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Notebook" width="200" height="200">
+  <p>Jupyter Notebook est un environnement de développement interactif qui permet de créer et de partager des documents contenant du code, des visualisations et du texte. Il est largement utilisé en datascience pour l'exploration et l'analyse des données. Par exemple :</p>
+      <pre><code class="language-python">
+        # Vous pouvez exécuter du code Python dans une cellule Jupyter Notebook
+        print("Hello, Jupyter!")
+        </code></pre>
+  <h3>Anaconda pour la gestion des environnements et des packages</h3>
+  <img src="../../../assets/img/notebook-anaconda.png" alt="Anaconda" width="200" height="200">
+  <p>Anaconda est une distribution Python qui facilite la gestion des environnements et des packages. Il inclut des outils tels que conda pour créer des environnements virtuels et installer des bibliothèques. Par exemple :</p>
+  <pre><code class="language-bash">
+        # Créer un environnement conda
+        conda create -n myenv python=3.8
+        # Activer l'environnement
+        conda activate myenv
+        # Installer une bibliothèque
+        conda install numpy
+        </code></pre>
+  <h3>Git et GitHub pour faciliter votre travail en datascience</h3>
+  <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="100" height="100">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="100" height="100">
+  <p>Git est un système de gestion de versions décentralisé qui vous permet de suivre les modifications de votre code et de collaborer avec d'autres développeurs. GitHub est une plateforme en ligne qui héberge des dépôts Git et offre des fonctionnalités supplémentaires pour la collaboration et la gestion de projets. Par exemple :</p>
+  <pre><code class="language-bash">
+        # Initialiser un dépôt Git
+        git init
+        # Ajouter des fichiers au suivi
+        git add .
+        # Valider les modifications
+        git commit -m "Initial commit"
+        # Pousser les modifications vers GitHub
+        git push origin main
+        </code></pre>
 
       <h2>Notebook du sous-répertoire</h2>
       <ul class="list">
         <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://nbviewer.org/github/ArmandGaye/ArmandGaye.github.io/blob/main/data/notebooks/bases-python/bases_python.ipynb">bases_python.ipynb</a></li>
       </ul>
-
-      <h2>Compétences visées</h2>
-      <ul class="list">
-        <li>Comprendre les types natifs et les structures de contrôle.</li>
-        <li>Écrire des fonctions propres et réutilisables.</li>
-        <li>Manipuler des collections (listes, dictionnaires, tuples, sets).</li>
-        <li>Préparer une base solide avant NumPy, pandas et scikit-learn.</li>
-      </ul>
-    </section>
   </main>
 
   <script src="../../../assets/js/script.min.js"></script>
